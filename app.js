@@ -1,4 +1,5 @@
 const express = require('express');
+const moment = require('moment-timezone');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -12,8 +13,8 @@ app.get('/api', (req, res) => {
 
     const current_day = getCurrentDay();
     const utc_time = getCurrentUtcTime().toISOString();
-    const github_repo_url = 'https://github.com/rezi452/backend1';
-    const github_file_url = `${github_repo_url}/blob/main/file_name.ext`;
+    const github_file_url = 'https://github.com/Rezi452/backend1.git';
+    const github_repo_url = 'https://github.com/Rezi452/backend1';
 
     const response_data = {
         slack_name,
