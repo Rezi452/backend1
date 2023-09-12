@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js", 
-    "dev": "nodemon app.js", 
-    "build": "", 
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "",
     "server": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Rezi452/backend1#readme",
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {}
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  }
 }
